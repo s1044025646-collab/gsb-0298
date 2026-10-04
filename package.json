@@ -1,0 +1,23 @@
+{
+  "name": "morton-cover-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "二维整数网格 Morton(Z-order) 编码与矩形区间覆盖后端（API + CLI）",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/server.ts",
+    "start:dist": "node dist/src/server.js",
+    "cli": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.2"
+  }
+}
